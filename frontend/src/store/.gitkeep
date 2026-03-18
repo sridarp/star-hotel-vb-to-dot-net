@@ -1,0 +1,2 @@
+// zustand needs to be added to package.json
+// Adding it here as it was missed from initial package.json
