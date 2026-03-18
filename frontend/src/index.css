@@ -1,0 +1,72 @@
+/* Star Hotel — Global Styles */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --color-bg: #303030;
+  --color-bg-light: #505050;
+  --color-text: #e0e0e0;
+  --color-text-dim: #a0a0a0;
+  --color-accent: #4c87c9;
+  --color-green: #76e600;
+  --color-yellow: #ffea00;
+  --color-red: #ff1744;
+  --color-purple: #d500f9;
+  --color-blue: #ff7929;
+  --color-gray: #505050;
+  --color-border: #404040;
+  --radius: 6px;
+  --font: 'Segoe UI', system-ui, sans-serif;
+}
+
+body {
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font);
+  font-size: 14px;
+  min-height: 100vh;
+}
+
+a { color: var(--color-accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+input, select, textarea {
+  background: var(--color-bg-light);
+  color: var(--color-text);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  padding: 6px 10px;
+  font-size: 14px;
+  width: 100%;
+}
+input:focus, select:focus, textarea:focus {
+  outline: 2px solid var(--color-accent);
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  border-radius: var(--radius);
+  padding: 8px 16px;
+  font-size: 14px;
+  font-weight: 600;
+  transition: opacity 0.15s;
+}
+button:hover { opacity: 0.85; }
+button:disabled { opacity: 0.4; cursor: not-allowed; }
+
+.btn-primary { background: var(--color-accent); color: #fff; }
+.btn-danger  { background: var(--color-red); color: #fff; }
+.btn-success { background: var(--color-green); color: #000; }
+.btn-ghost   { background: var(--color-bg-light); color: var(--color-text); }
+
+label { font-weight: 600; font-size: 13px; margin-bottom: 4px; display: block; }
+
+.card {
+  background: var(--color-bg-light);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  padding: 16px;
+}
+
+.error { color: #ff5252; font-size: 13px; }
+.success { color: var(--color-green); font-size: 13px; }
